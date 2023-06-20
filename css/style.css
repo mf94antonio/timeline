@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+.menu-auto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 370px 3em 370px;
+    background-color: #363232;
+}
+
+.item-auto {
+    display: flex;
+    column-gap: 3em;
+}
+
+.item1 {
+    color: #fff;
+    text-decoration: none;
+
+}
+
 .slider {
     padding: 0;
     max-width: 100%;
@@ -18,6 +37,7 @@
     height: 85vh;
     display: flex;
     background-color: #e42828;
+   
 }
 
 .slides input {
@@ -42,7 +62,8 @@
     column-gap: 40px;
     display: flex;
     justify-content: center;
-    margin-left: 46.85%;
+    align-items: center;
+    margin-left: 45%;
 }
 .manual-btn {
     border: 2px solid #050404;
@@ -83,7 +104,8 @@ p, h1 {
 .picture-auto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 3em;
+    row-gap: 10em;
+    margin: 15em 15em;
 }
 
 .picture {
@@ -95,7 +117,18 @@ p, h1 {
 
 .picture img {
     width: 1000px;
-    height: 500px;
+    height: 1000px;
+    background-repeat: no-repeat;
+}
+
+.text-picture {
+    margin-top: -75px;
+    font-size: 4em;
+}
+
+.conta {
+    background-color: #363232;
+    padding: 7em;
 }
 
 .contact-auto {
@@ -111,18 +144,67 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    row-gap: 3em;
+    padding-left: 260px;
 }
 
 .item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3em;
+    padding-right: 260px;
 }
 
 hr {
-    width: 80%;
+    width: 86%;
     margin: 0 auto;
     margin-bottom: 3em;
+    color: #fff;
 }
 
+.contact1 {
+    color: #fff;
+    text-decoration: none;
+}
 
+.web {
+    color: #fff;
+}
+
+/* Responsividade */
+
+@media (max-width:1400px) {
+    .menu-auto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        
+    }
+    .item-auto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .picture-auto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-auto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .item {
+        display: flex;
+        flex-direction: column; 
+        margin-left: 150px;
+    }
+
+
+    
+}
